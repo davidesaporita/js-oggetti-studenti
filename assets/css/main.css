@@ -4,3 +4,15 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#task-1 h5 {
+    padding: 20px;
+}

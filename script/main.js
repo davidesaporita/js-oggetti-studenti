@@ -11,4 +11,17 @@
  * 
  */
 
+$(document).ready( function() {
 
+    // Definizione variabili e oggetti
+    var booleanStudent = {
+        name: 'True',
+        surname: 'False',
+        age: 1
+    };
+
+    for ( var key in booleanStudent ) {
+        $('#task-1').append('<h5>' + key + ': ' + booleanStudent[key] + '</h5>');
+    }
+
+});
