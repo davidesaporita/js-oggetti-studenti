@@ -11,8 +11,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: lightsalmon;
 }
 
-#task-1 h5 {
-    padding: 20px;
+hr {
+
+    margin: 10px;
+}
+
+#task-1 span {
+    padding: 2px;
+}
+
+.sent {
+    text-align: right;
+    background: yellowgreen;
+}
+
+.received {
+    text-align: left;
+    background: aquamarine;
 }

@@ -8,15 +8,33 @@
 </head>
 <body>
 
-    <header>
-        <h1>Classe Booleana</h1>
-    </header>
+    <h4>Dati Studente</h4>
     <div id="task-1"></div>
+    <hr>
+
+    <!-- CHAT -->
+    <main class="chat">
+        <div>
+            <h4>Fai una domanda:</h4>
+            <input type="text" class="msg-input" placeholder="Scrivi qui la tua domanda">
+            <button class="msg-button">Chiedi</button>
+        </div>
+        <div class="conversation"></div>
+    </main>
+
+    <!-- HANDLEBARS TEMPLATE -->
+    <script id="msg-template" type="text/x-handlebars-template">
+        <div class="message {{ way }}">
+            <div class="text">{{ text }}</div>
+            <div class="time">{{ time }}</div>
+        </div>    
+    </script>
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
     <script src="script/main.js"></script>
 </body>
 </html>
